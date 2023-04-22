@@ -1,0 +1,15 @@
+* {
+    font-family: 'Gogh', sans-serif;
+}
+
+@import 'base/_variables.scss';
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+@import 'blocks/promo';
+@import 'blocks/header';
+@import 'blocks/brand';
+@import 'blocks/button';
