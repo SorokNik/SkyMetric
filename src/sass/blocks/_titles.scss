@@ -1,0 +1,17 @@
+.title {
+    font-weight: 500;
+    font-size: 50px;
+    color: $titles-color;
+    text-align: center;
+    &_main{
+        font-size: 62px;
+        color: $promo-color;
+    }
+    &_size-s{
+        font-size: 36px;
+    }
+    &_size-xs{
+        font-size: 22px;
+        color: $subtitles-color;
+    }
+}

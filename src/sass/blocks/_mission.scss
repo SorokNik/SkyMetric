@@ -1,0 +1,28 @@
+.mission{
+    min-height: 393px;
+    padding-bottom: 72px;
+    &__descr{
+        margin-top: 32px;
+        font-size: 30px;
+        text-align: center;
+    }
+    &__wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__point{
+        width: 628px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), rgba(31, 29, 178, 0.04);
+        border-radius: 8px;
+        padding: 32px 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__button{
+        margin: 0 auto;
+        margin-top: 40px;
+    }
+}
