@@ -3,6 +3,7 @@
     font-size: 50px;
     color: $titles-color;
     text-align: center;
+    margin: 0;
     &_main{
         font-size: 62px;
         color: $promo-color;
@@ -13,5 +14,8 @@
     &_size-xs{
         font-size: 22px;
         color: $subtitles-color;
+    }
+    &_left{
+        text-align: left;
     }
 }

@@ -1,8 +1,9 @@
 .advantages{
-    padding: 72px 0;
-    background: url(../img/bg/advantages_bg.jpg) center center/cover no-repeat;
+    padding-top: 72px;
+    background: url(../img/bg/advantages_bg.svg) center center/cover no-repeat;
     min-height: 865px;
     &__wrapper{
+        padding: 0;
         margin-top: 207px;
         height: 298px;
         display: flex;
@@ -11,9 +12,29 @@
         justify-content: space-between;
     }
     &__title{
-        text-align: start;
+        width: 628px;
     }
     &__item{
         width: 628px;
+        height: 137px;
+        padding: 24px 48px 24px 32px;
+        position: relative;
+    }
+    li{
+        list-style:none;       
+    }
+    &__counter{
+        position: absolute;
+        top: -5px;
+        left: -5px;
+        width: 30px;
+        height: 30px;
+        background: $accent-color;
+        border-radius: 100%;
+        font-weight: 700;
+        color: $promo-color;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

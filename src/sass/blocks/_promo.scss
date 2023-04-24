@@ -1,17 +1,8 @@
 .promo {
     min-height: 830px;
-    // padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 24px;
     position: relative;
-    // background: url(../img/bg/promo_bg.jpg) center center/cover no-repeat;
-    &__bg{
-        position: absolute;
-        z-index: -1;
-        width:  100%;
-    }
-    &__header{
-        margin-top: 24px;
-    }
+    background: url(../img/bg/promo_bg.svg) center/cover no-repeat;
     &__wrapper {
         display: flex;
         align-items: center;
