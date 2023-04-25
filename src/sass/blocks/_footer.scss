@@ -1,4 +1,79 @@
 .footer{
+    padding-top: 110px;
     min-height: 225px;
+    margin-top: 72px;
     background: url(../img/bg/footer_bg.svg) center/cover no-repeat;
+    &__reviews-wrapper{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 85px;
+        height: 115px;
+        left: 50%;
+        right: 50%;
+    }
+    &__reviews-link{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 14px;
+        a{
+            text-decoration: none;
+            color: $promo-color;
+        }
+    }
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav{
+        width: 460px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__brand{
+        color: $promo-color;
+        height: 98px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    a{
+        text-decoration: none;
+    }
+    &__company{
+        font-weight: 500;
+        font-size: 11px;
+    }
+    &__page-links{
+        height: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        a{
+            text-decoration: none;
+            color: $promo-color;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+    &__public{
+        height: 68px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: right;
+        a{
+            text-decoration: none;
+            color: $promo-color;
+            font-weight: 500;
+            font-size: 14px; 
+        }
+    }
+    &__sign{
+        display: inline-block;
+        font-weight: 500;
+        font-size: 11px;
+        color: $promo-color; 
+    }
 }

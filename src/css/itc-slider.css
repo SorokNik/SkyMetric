@@ -1,0 +1,70 @@
+/**
+ * ItcSlider
+ * @version 1.0.0
+ * @author https://github.com/itchief
+ * @copyright Alexander Maltsev 2020 - 2022
+ * @license MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+ * @tutorial https://itchief.ru/javascript/slider
+ */
+
+.itc-slider {
+  position: relative;
+}
+
+.itc-slider__wrapper {
+  padding: 48px 0 32px 0;
+  overflow: hidden;
+}
+
+.itc-slider__items {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+.itc-slider__transition-none {
+  transition: none;
+}
+
+.itc-slider__item {
+  flex: 0 0 50%;
+  max-width: 100%;
+  user-select: none;
+  will-change: transform;
+}
+
+/* индикаторы */
+.itc-slider__indicators {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  margin: 0 15%;
+  padding-left: 0;
+  list-style: none;
+}
+
+.itc-slider__indicator {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px 0 5px;
+  border-radius: 100%;
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  cursor: pointer;
+  background-color: #D1D1D1;
+  background-clip: padding-box;
+  transition: 0.5s all ease;
+}
+
+.itc-slider__indicator_active {
+  width: 24px;
+  height: 10px;
+  background: #3562D0;
+  border-radius: 8px;
+  margin: 0 5px 0 5px;
+  transition: 0.5s all ease;
+  }
