@@ -1,41 +1,125 @@
 .promo {
-    min-height: 830px;
-    padding-top: 24px;
-    position: relative;
-    background: url(../img/bg/promo_bg.svg) center/cover no-repeat;
-    &__wrapper {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-top: 146px;
+  position: relative;
+  min-height: 830px;
+  padding-top: 24px;
+  position: relative;
+  background: url(../img/bg/promo_bg.svg) center/cover no-repeat;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 146px;
+  }
+
+  &__wrapper-descr {
+    width: 628px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 62px;
+    color: $promo-color;
+  }
+
+  &__descr {
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: $promo-color;
+  }
+
+  &__button {
+    margin-top: 32px;
+  }
+
+  &__video {
+    width: 600px;
+    height: 320px;
+    background: url(../icons/points/frame.svg) center no-repeat;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    img {
+      border-radius: 8px;
     }
-    &__wrapper-descr {
-        width: 628px;
+  }
+
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: $promo-color;
+    transition: 0.6s all;
+    z-index: 1;
+
+    &_active {
+      left: 0;
     }
-    &__title {
-        font-weight: 500;
-        font-size: 62px;
-        color: $promo-color;
+
+    &_item {
+      padding-right: 0;
+      border: none;
+      margin: 10px 0;
     }
-    &__descr {
-        margin-top: 24px;
-        font-weight: 400;
-        font-size: 18px;
-        color: $promo-color;
+
+    &_link {
+      font-size: 20px;
     }
-    &__button {
-        margin-top: 32px;
+  }
+
+  .hamburger {
+    display: none;
+    position: absolute;
+    right: 3%;
+    top: 5%;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 25px;
+    z-index: 1;
+
+    span {
+      display: block;
+      height: 2px;
+      width: 100%;
+      background-color: $promo-color;
+      margin-bottom: 4px;
+      transition: 0.5s all;
+      border-radius: 0.8px;
     }
-    &__video {
-        width: 600px;
-        height: 320px;
-        background: url(../icons/points/frame.svg) center no-repeat;
-        padding-top: 25px;
-        padding-bottom: 25px;
-        padding-left: 30px;
-        padding-right: 30px; 
-        img{
-            border-radius: 8px;
+
+    &_active {
+      span {
+        margin-bottom: -2px;
+        background-color: $titles-color;
+
+        &:nth-child(1) {
+          transform: translateY(3px) rotate(-45deg);
         }
+
+        &:nth-child(2) {
+          display: none;
+        }
+
+        &:nth-child(3) {
+          transform: translateY(3px) rotate(45deg);
+        }
+      }
     }
+  }
+  &__brand-hidden{
+    display: none;
+    margin: 0;
+    position: absolute;
+    left: 3%;
+    top: 5%;
+  }
 }

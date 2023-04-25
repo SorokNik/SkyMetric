@@ -18,6 +18,14 @@
         top: -32px;
         left: 193px;
     }
+    &__pointer-bottom-right{
+        display: none;
+        position: absolute;
+    }
+    &__pointer-bottom-left{
+        display: none;
+        position: absolute;
+    }
     &__step{
         padding: 24px;
         width: 410px;

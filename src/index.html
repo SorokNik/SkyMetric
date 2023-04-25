@@ -15,6 +15,21 @@
 
 <body>
     <section class="promo">
+        <div class="promo__brand-hidden">SkyMetric</div>
+
+        <ul class="menu">
+            <h3 class="brand">SkyMetric</h3>
+            <li class="menu_item"><a href="#" class="menu_link">Как это работает</a></li>
+            <li class="menu_item"><a href="#require" class="menu_link">Для чего подойдёт</a></li>
+            <li class="menu_item"><a href="#require" class="menu_link">Отзывы</a></li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
         <div class="container">
             <header class="promo__header header">
                 <nav class="header__navbar">
@@ -71,6 +86,8 @@
             <div class="how-it-works__steps-wrapper">
                 <img class="how-it-works__pointer-top" src="icons/points/pointer-top.svg" alt="pointer top">
                 <img class="how-it-works__pointer-bottom" src="icons/points/pointer-bottom.svg" alt="pointer bottom">
+                <img class="how-it-works__pointer-bottom-right" src="icons/points/pointer-bottom-right.svg" alt="pointer-bottom">
+                <img class="how-it-works__pointer-bottom-left" src="icons/points/pointer-bottom-left.svg" alt="pointer-bottom">
                 <div class="how-it-works__step item">
                     <h3 class="title_size-xs">Шаг 1</h3>
                     <div class="how-it-works__descr">Установите расширение в Google Chrome</div>
@@ -94,14 +111,14 @@
             <div class="mission__wrapper">
                 <div class="mission__point">
                     <div class="mission__point-wrapper">
-                        <h3 class="title title_size-s">> 2 500 000 товаров</h3>
+                        <h3 class="title title_size-s mission__title">> 2 500 000 товаров</h3>
                         <div class="mission__point-descr">наш сервис анализирует ежедневно</div>
                     </div>
                     <img class="mission__icon" src="icons/mission/boxes.svg" alt="boxes">
                 </div>
                 <div class="mission__point">
                     <div class="mission_point-wrapper">
-                        <h3 class="title title_size-s">> 500 магазинов</h3>
+                        <h3 class="title title_size-s mission__title">> 500 магазинов</h3>
                         <div class="mission__point-descr">Kaspi доверяют нам</div>
                     </div>
                     <img class="mission__icon" src="icons/mission/shops.svg" alt="shops">
@@ -222,9 +239,10 @@
         <div class="container">
             <div class="footer__reviews-wrapper">
                 <div class="footer__reviews-link"><a href="#">Отзывы</a></div>
-                <div class="footer__sign">С <span><img src="icons/heart.svg" alt="heart"></span> из Астаны</div>
+                <div class="footer__sign footer__hidden">С <span><img src="icons/heart.svg" alt="heart"></span> из Астаны</div>
             </div>
             <div class="footer__wrapper">
+                <div class="footer__sign ">С <span><img src="icons/heart.svg" alt="heart"></span> из Астаны</div>
                 <div class="footer__nav">
                     <div class="footer__brand">
                         <a href="#" class="brand">SkyMetric</a>
@@ -236,6 +254,7 @@
                         <a href="#" class="footer__page-link">Для чего подойдёт</a>
                     </div>
                 </div>
+                <a href="#" class="footer__telegram footer__hidden"><img src="icons/telegram-logo.svg" alt="Telegram"></a>
                 <div class="footer__public">
                     <a href="#">Публичная оферта</a>
                     <a href="#">Политика конфиденциальности</a>
@@ -245,8 +264,10 @@
         </div>
     </footer>
 
+    <script src="js/modules/hamburger.js" defer></script>
+    <script src="js/modules/removeSlider.js" defer></script> 
     <script src="js/modules/addIndicators.js" defer></script>
-    <script src="js/modules/itc-slider.js" defer></script>    
+    <script src="js/modules/itc-slider.js" defer></script>   
 </body>
 
 </html>

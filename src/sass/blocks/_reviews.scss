@@ -7,8 +7,9 @@
     }
     &__slider-inner{
         display: flex;
-        // justify-content: space-between;
-        // align-items: center;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 760px;
     }
     &__item-wrapper{
         margin: 0 6px;
