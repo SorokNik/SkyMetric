@@ -208,7 +208,14 @@
 		&__item-wrapper{
 			margin: 0 auto;
 			width: 100%;
-			flex-direction: row-reverse;
+		}
+		&__title{
+			margin-left: 90px;
+			padding: 25px;
+		}
+		&__photo{
+			right: 0;
+			left: 24px;
 		}
 		&__item{
 			width: 85%;
@@ -344,12 +351,21 @@
 			margin-top: 90px;
 		}
 	}
+	.advantages{
+		&__item{
+			height: auto;
+		}
+	}
 	.reviews{
 		&__item-wrapper{
-			height: 250px;
+			height: 95%;
 		}
 		&__item{
 			width: 75%;
+		}
+		&__title{
+			width: 47%;
+			padding: 3%;
 		}
 		&__slider-inner{
 			height: 800px;
@@ -370,9 +386,23 @@
         width: 95%;
     }
 	.promo{
-		min-height: 550px;
+		min-height: 585px;
 		.hamburger{
 			top: 6%;
+		}
+		.brand{
+			font-weight: 500;
+			font-size: 18px;
+			margin-bottom: 18px;
+		}
+		.menu{
+			&_item{
+				margin: 0;
+				margin-bottom: 18px;
+			}
+			&_link{
+				font-size: 14px;
+			}
 		}
 		.title_main{
 			text-align: left;
@@ -389,6 +419,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		font-size: 14px;
 	}
 	.title{
 		font-size: 24px;
@@ -400,6 +431,7 @@
 		}
 	}
 	.how-it-works{
+		min-height: auto;
 		&__steps-wrapper{
 			margin-top: 27px;
 			height: 400px;
@@ -440,7 +472,7 @@
 			flex-direction: row-reverse;
 			justify-content: start;
 			height: 92px;
-			padding: 24px 70px 24px 16px;
+			padding: 24px 0 24px 16px;
 		}
 		&__point-descr{
 			font-size: 14px;
@@ -461,6 +493,11 @@
 		margin-top: 10px;
 		&__item-wrapper{
 			padding: 24px;
+		}
+		&__title{
+			margin-left: 56px;
+			width: 36%;
+			padding-top: 5%;
 		}
 		&__descr{
 			font-size: 14px;
@@ -503,6 +540,20 @@
 		}
 		&__hidden{
 			display: block;
+		}
+	}
+}
+@media(max-width: 367px){
+	.how-it-works{
+		&__pointer-bottom-right{
+			top: 116px;
+			width: 260px;
+			height: 45px;
+		}
+		&__pointer-bottom-left{
+			top: 258px;
+			width: 260px;
+			height: 45px;
 		}
 	}
 }

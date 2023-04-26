@@ -16,9 +16,10 @@
         width: 628px;
         height: 223px;
         padding: 32px;
-        display: flex;
-        justify-content: space-between;
-        align-items:start;
+        position: relative;
+        // display: flex;
+        // justify-content: space-between;
+        // align-items:start;
     }
     &__item{
         width: 403px;
@@ -31,6 +32,9 @@
         height: 80px;
         border-radius: 100%;
         border: 3px solid $accent-color;
+        position: absolute;
+        top: 32px;
+        right: 32px;
         display: flex;
         align-items: center;
         justify-content: center;

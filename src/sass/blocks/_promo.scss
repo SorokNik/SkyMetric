@@ -59,7 +59,7 @@
     padding: 20px 15px;
     background-color: $promo-color;
     transition: 0.6s all;
-    z-index: 1;
+    z-index: 2;
 
     &_active {
       left: 0;
@@ -84,7 +84,7 @@
     transform: translateY(-50%);
     width: 25px;
     height: 25px;
-    z-index: 1;
+    z-index: 2;
 
     span {
       display: block;
@@ -97,6 +97,9 @@
     }
 
     &_active {
+      position: fixed;
+      // right: 0;
+      top: 0%;
       span {
         margin-bottom: -2px;
         background-color: $titles-color;
