@@ -208,17 +208,22 @@
 		&__item-wrapper{
 			margin: 0 auto;
 			width: 100%;
-		}
-		&__title{
-			margin-left: 90px;
-			padding: 25px;
-		}
-		&__photo{
-			right: 0;
-			left: 24px;
+			display: block;
 		}
 		&__item{
-			width: 85%;
+			height: 80px;
+			align-items: center;
+			flex-direction: row;
+			
+			justify-content: left;
+		}
+		&__photo{
+			margin-right: 24px;
+		}
+		&__descr{
+			margin-top: 10px;
+			width: auto;
+			padding-right: 32px;
 		}
     }
 	.footer{
@@ -358,14 +363,10 @@
 	}
 	.reviews{
 		&__item-wrapper{
-			height: 95%;
+			height: auto;
 		}
-		&__item{
-			width: 75%;
-		}
-		&__title{
-			width: 47%;
-			padding: 3%;
+		&__descr{
+			position: static;
 		}
 		&__slider-inner{
 			height: 800px;
@@ -494,15 +495,18 @@
 		&__item-wrapper{
 			padding: 24px;
 		}
+		&__item{
+			height: 56px;
+		}
 		&__title{
-			margin-left: 56px;
-			width: 36%;
-			padding-top: 5%;
+			width: 67%;
 		}
 		&__descr{
 			font-size: 14px;
+			padding: 0;
 		}
 		&__photo{
+			margin-right: 16px;
 			width: 56px;
 			height: 56px;
 		}
