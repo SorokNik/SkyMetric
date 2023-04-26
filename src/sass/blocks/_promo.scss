@@ -78,9 +78,9 @@
 
   .hamburger {
     display: none;
-    position: absolute;
-    right: 3%;
-    top: 5%;
+    position: static;
+    margin-left: 90%;
+    margin-top: 14px;
     transform: translateY(-50%);
     width: 25px;
     height: 25px;
@@ -98,8 +98,8 @@
 
     &_active {
       position: fixed;
-      // right: 0;
-      top: 0%;
+      margin-top: 0;
+      top: 40px;
       span {
         margin-bottom: -2px;
         background-color: $titles-color;
