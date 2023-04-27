@@ -546,6 +546,9 @@
 	}
 }
 @media(max-width: 367px){
+	.promo{
+		min-height: 640px;
+	}
 	.how-it-works{
 		&__pointer-bottom-right{
 			top: 116px;
